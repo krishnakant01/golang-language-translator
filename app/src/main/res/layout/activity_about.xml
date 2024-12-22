@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_1"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/lightGrey"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_color_1">
+
+            <TextView
+                android:id="@+id/Label1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:padding="4dp"
+                android:text="English ➢ Hindi"
+                android:textColor="@color/lightGrey"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Source1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:padding="4dp"
+                android:text="Source: Hello we welcome you all"
+                android:textColor="@color/lightGrey"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="@+id/Label1" />
+
+            <TextView
+                android:id="@+id/Translation1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:padding="4dp"
+                android:text="Translation: नमस्कार हम आप लोग का स्वागत करते है "
+                android:textColor="@color/lightGrey"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="@+id/Source1" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/lightGrey"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/card1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_color_1">
+            <TextView
+                android:id="@+id/Label2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="4dp"
+                android:text="English ➢ Spanish"
+                android:textColor="@color/lightGrey"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/Source2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Source: An extended play (EP) is a musical recording that contains more tracks than a single but fewer than an album or LP record."
+                android:textColor="@color/lightGrey"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/Label2" />
+            <TextView
+                android:id="@+id/Translation2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="4dp"
+                android:text="Translation: Una obra extendida (EP) es una grabacion miusical que contiene mas pistas que un solo pero menos un album o un registro LP."
+                android:textColor="@color/lightGrey"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/Source2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/lightGrey"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintTop_toBottomOf="@id/card2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_color_1">
+            <TextView
+                android:id="@+id/Label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:padding="4dp"
+                android:text="English ➢ Italian"
+                android:textColor="@color/lightGrey"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/Source"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Source: This is an excellent translation app."
+                android:textColor="@color/lightGrey"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/Label" />
+            <TextView
+                android:id="@+id/Translation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Translation: Questa è un'eccellente app di traduzione. "
+                android:textColor="@color/lightGrey"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/Source" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
